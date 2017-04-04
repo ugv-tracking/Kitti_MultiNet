@@ -1,0 +1,7 @@
+<launch>
+	    <node pkg="kitti_player" type="kitti_player.py" name="kitti_player" output="screen"> 
+	        <param name="video_stream_provider" type="string" value="$(find kitti_player)/tusimple.mp4" />
+	        <param name="fps" type="int" value="20" />
+	    </node>
+
+</launch>
